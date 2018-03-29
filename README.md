@@ -9,7 +9,7 @@
 - Modify the keras code in lines 2552-2353 of evaluate_generator() in the file /engine/training.py: averages.append(np.average([out[i] for out in all_outs], weights=batch_sizes, axis=0)). Or you can update the loss code as recently updated in [matterport/Mask_RCNN](https://github.com/matterport/Mask_RCNN/commit/e41ee4970764a302b6798a5762321a9eb9ae4eca)
 
 ## Pitfalls
-- When using the horizontal flip augmentation, be aware of the "mirror person" problem. Maybe we should not use this augmentation.
+- When using the horizontal flip augmentation, be aware of the "mirror person" problem. Maybe we should not use this kind of augmentation.
 ![MirrorPerson](assets/mirror.png)
 
 ## Related Works
